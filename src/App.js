@@ -30,8 +30,8 @@ function App() {
   };
 
   return (
-    <div classNameName="app">
-      <header classNameName="app-header">
+    <div className="app">
+      <header className="app-header">
         <h1>
           Carbon Qualms
         </h1>
