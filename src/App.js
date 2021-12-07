@@ -30,8 +30,8 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <header className="app-header">
+    <div classNameName="app">
+      <header classNameName="app-header">
         <h1>
           Carbon Qualms
         </h1>
@@ -54,6 +54,24 @@ function App() {
         {penance && sin &&
           <p>{penance}</p>
         }
+        <div className='campfire'>
+          <div className='red-1'></div>
+          <div className='orange-1'></div>
+          <div className='yellow-1'></div>
+          <div className='red-2'></div>
+          <div className='red-3'></div>
+          <div className='yellow-1'></div>
+
+          <div className='orange-1'></div>
+          <div className='red-1'></div>
+          <div className='orange-1'></div>
+          <div className='yellow-1'></div>
+          
+          <div className="wood-1"></div>
+          <div className="wood-2"></div>
+          <div className="ground"></div>
+        </div>
+  
       </main>
     </div>
   );
