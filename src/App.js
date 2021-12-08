@@ -72,6 +72,9 @@ function App() {
   
   
       </main>
+      <footer>
+        <p>If you want to do more than just confess your sins to the internet, nature.org has a <a href="https://www.nature.org/en-us/get-involved/how-to-help/carbon-footprint-calculator/" target="_blank" rel="noopener noreferrer">carbon footprint calculator</a> and also has great suggestions on what you can do to reduce your carbon footprint.</p>
+      </footer>
     </div>
       
   );

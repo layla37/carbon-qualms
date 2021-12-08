@@ -1,13 +1,20 @@
 body {
-  background: hsl(206deg 80% 70%);
+  background: hsl(206deg 80% 84%);
   font-size: 1.25rem;
+}
+
+a {
+   color: #b41c6b;
+}
+
+a:hover {
+  color: #db62a1;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
 select {
@@ -25,8 +32,12 @@ button {
   cursor: pointer;
 }
 
-button:active {
+button:hover {
   background-color: #e6b2e1;
+}
+
+button:active {
+  background-color: #e7cbe4;
 }
 
 form {
@@ -35,16 +46,28 @@ form {
   align-items: center;
 }
 
+footer {
+  margin-top: 40px;
+  width: 70%;
+}
+
 @keyframes move {
-    from {
-      transform: translate(-100%, 50%);
-      opacity: 1;
-    }
-    to {
-      transform: translate(100%, -50%);
-      opacity: 0.5;
-    }
+  from {
+    transform: translate(-100%, 50%);
+    opacity: 1;
   }
+  to {
+    transform: translate(100%, -50%);
+    opacity: 0.5;
+  }
+}
+
+.app {
+  padding: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .sin-and-penance {
   height: 230px;
@@ -57,13 +80,14 @@ form {
 .penance {
   background-color: antiquewhite;
   padding: 20px;
-  border: black 2px solid;
+  border: black 1px solid;
 }
 
 .campfire {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 35px;
 }
 
 .ground {
@@ -127,12 +151,18 @@ form {
 }
 
 @media (max-width: 780px) {
-  .campfire {
-    margin-top:35px;
-  }
-
   .penance {
     padding: 10px;
     font-size: 1rem;
+  }
+
+  footer {
+    width: 96%;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
