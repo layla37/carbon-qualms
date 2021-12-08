@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const PENANCE_OPTIONS = [
@@ -31,29 +31,27 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>
-          Carbon Qualms
-        </h1>
-       <p>Confess Your Carbon Footprint Sins to Get Your Penance</p>
-      </header>
       <main>
-        <form onSubmit={handleSubmit}>
-          <label>Select Your Sin:
-            <select value={sin} onChange={(e) => setSin(e.target.value)}>
-              <option />
-              {
-                SIN_OPTIONS.map((sin) => {
-                  return <option key={sin} value={sin}>{sin}</option>
-                })
-              }
-            </select>
-          </label>
-          <button type="submit">Confess your sin</button>
-        </form>       
-        {penance && sin &&
-          <p>{penance}</p>
-        }
+        <h1>Carbon Qualms</h1>
+        <div className='sin-and-penance'>
+          <form onSubmit={handleSubmit}>
+            <label>Select your carbon footprint sin and receive your penance:
+              <select value={sin} onChange={(e) => setSin(e.target.value)}>
+                <option />
+                {
+                  SIN_OPTIONS.map((sin) => {
+                    return <option key={sin} value={sin}>{sin}</option>
+                  })
+                }
+              </select>
+            </label>
+            <button type="submit">Confess your sin</button>
+          </form>       
+          {penance && sin &&
+            <p className="penance">{penance}</p>
+          }
+        </div>
+        
         <div className='campfire'>
           <div className='red-1'></div>
           <div className='orange-1'></div>
@@ -72,8 +70,10 @@ function App() {
           <div className="ground"></div>
         </div>
   
+  
       </main>
     </div>
+      
   );
 }
 
